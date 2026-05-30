@@ -47,20 +47,41 @@
       </div>
     </div>
 
-    <!-- Mobile menu -->
-    <div class="mobile" id="mobileMenu" aria-hidden="true">
-      <div class="mobile__panel">
-        <a href="#quem-somos" class="mobile__link">Quem somos</a>
-        <a href="#todos-usando" class="mobile__link">Todos estão usando</a>
-        <a href="#o-que-criamos" class="mobile__link">O que criamos</a>
-        <a href="#tecnologias" class="mobile__link">Tecnologias</a>
-        <a href="#contato" class="mobile__link">Fale conosco</a>
-        <a class="btn btn--ghost mobile__github" href="https://github.com/" target="_blank" rel="noopener noreferrer">
-          <span class="icon">⌁</span> GitHub
-        </a>
-      </div>
-    </div>
-  </header>
+<!-- Mobile menu AGORA COM ABRIR/FECHAR -->
+<div class="mobile" id="mobileMenu" aria-hidden="true" style="display: none;"> <!-- COMEÇA ESCONDIDO -->
+  <div class="mobile__panel">
+    <a href="#quem-somos" class="mobile__link">Quem somos</a>
+    <a href="#todos-usando" class="mobile__link">Todos estão usando</a>
+    <a href="#o-que-criamos" class="mobile__link">O que criamos</a>
+    <a href="#tecnologias" class="mobile__link">Tecnologias</a>
+    <a href="#contato" class="mobile__link">Fale conosco</a>
+    
+    <!-- ✅ BOTÃO NOVO DO MR DOC -->
+    <a href="https://doc.metar.ia.br" target="_blank" class="mobile__link" style="color: #00f5d4; font-weight: bold;">
+      📄 MR Doc
+    </a>
+
+    <a class="btn btn--ghost mobile__github" href="https://github.com/">
+      <span class="icon"></span> GitHub
+    </a>
+  </div>
+</div>
+
+<!-- ✅ BOTÃO PARA ABRIR/FECHAR O MENU -->
+<button onclick="toggleMenu()" style="
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #1a1a2e;
+  color: #00f5d4;
+  border: 1px solid #00f5d4;
+  padding: 10px 15px;
+  border-radius: 8px;
+  z-index: 9999;
+  font-size: 18px;
+">
+  ☰ Menu
+</button>
 
   <!-- Botão GitHub flutuante (extra) -->
   <a class="fab-github" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub (atalho)">
@@ -316,5 +337,16 @@
   <!-- Three.js (CDN) -->
   <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
   <script src="js/script.js"></script>
+    <script>
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  // Troca entre mostrar e esconder
+  if (menu.style.display === 'none' || menu.style.display === '') {
+    menu.style.display = 'block';
+  } else {
+    menu.style.display = 'none';
+  }
+}
+</script>
 </body>
 </html>
