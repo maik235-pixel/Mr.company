@@ -197,13 +197,13 @@ img{ max-width:100%; display:block; }
   border-bottom: 1px solid rgba(142,189,255,.12);
 }
 .mobile__panel{
-  width:min(var(--max), calc(100% - 44px));
+  width:min(var(--max), calc(100% - 22px));
   margin:0 auto;
   display:grid;
-  gap:10px;
-  padding: 12px;
+  gap: 7px;
+  padding: 9px;
   border-radius: var(--radius);
-  border: 1px solid rgba(142,189,255,.18);
+  border: 1px solid rgba(132,179,245,.18);
   background: rgba(7, 14, 30, .28);
 }
 .mobile__link{
