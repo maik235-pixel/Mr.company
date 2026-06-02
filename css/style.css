@@ -775,7 +775,7 @@ img{ max-width:100%; display:block; }
 @media (max-width: 920px){
   .menu{ display:none; }
   .burger{ display:block; }
-  .mobile{ display:block; }
+  .mobile{ display:nome; }
   .hero__inner{
     grid-template-columns: 1fr;
     text-align:center;

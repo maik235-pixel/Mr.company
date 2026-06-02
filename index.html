@@ -320,8 +320,20 @@
 <script>
 const menuBtn = document.getElementById('burger');
 const menuMobile = document.getElementById('mobileMenu');
-menuBtn.addEventListener('click', e => {e.stopPropagation(); menuMobile.classList.toggle('mobile--aberto');});
-document.addEventListener('click', () => menuMobile.classList.remove('mobile--aberto'));
+const painel = document.querySelector('.mobile__panel');
+
+menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menuMobile.classList.toggle('mobile--aberto');
+});
+
+painel.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
+
+document.addEventListener('click', () => {
+    menuMobile.classList.remove('mobile--aberto');
+});
 </script>
 </body>
 </html>
