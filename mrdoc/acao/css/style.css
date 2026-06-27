@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background-image:url('../imagens/background.png');
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+.overlay{
+    min-height:100vh;
+
+    background:rgba(0,0,0,0.70);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:20px;
+}
+
+.logo{
+    width:120px;
+    align-self:flex-start;
+}
+
+h1{
+    margin-top:20px;
+    margin-bottom:30px;
+
+    text-align:center;
+
+    color:#00ffff;
+}
+
+.servicos{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.emi{
+    width:180px;
+}
+
+.botoes{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.neon-btn{
+
+background:#00ffff;
+
+box-shadow:
+0 0 5px #00ffff,
+0 0 15px #00ffff,
+0 0 30px #00ffff,
+0 0 60px #00ffff;
+
+animation:pulsar 2s infinite;
+}
+
+    border:none;
+    border-radius:15px;
+
+    background:#00ffff;
+    color:black;
+
+    font-weight:bold;
+    font-size:16px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+
+    transition:0.3s;
+}
+
+.neon-btn:hover{
+    transform:scale(1.05);
+}
+
+.outros{
+    margin-top:50px;
+    text-align:center;
+}
+
+.outros h2{
+    margin-bottom:20px;
+}
+
+.apps{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.app-icon{
+    width:90px;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.app-icon:hover{
+    transform:scale(1.1);
+}
+
+footer{
+    margin-top:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:15px;
+
+    padding-top:30px;
+}
+
+.inicio-btn{
+    padding:12px 25px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#00ffff;
+    color:black;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+@media(max-width:600px){
+
+    .logo{
+        width:90px;
+    }
+
+    .emi{
+        width:140px;
+    }
+
+    .neon-btn{
+        width:250px;
+    }
+@keyframes pulsar{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.03);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+}

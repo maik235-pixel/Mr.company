@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>MR DOC - Currículo</title>
+
+<link rel="stylesheet"
+href="../css/curriculo.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>GERADOR DE CURRÍCULO</h1>
+
+<form id="curriculoForm">
+
+<input
+type="text"
+id="nome"
+placeholder="Nome Completo"
+required>
+
+<input
+type="text"
+id="rua"
+placeholder="Rua">
+
+<input
+type="text"
+id="numero"
+placeholder="Número da Casa">
+
+<input
+type="text"
+id="bairro"
+placeholder="Bairro">
+
+<input
+type="text"
+id="referencia"
+placeholder="Ponto de Referência">
+
+<select id="estadoCivil">
+
+<option value="">
+Estado Civil
+</option>
+
+<option>
+Solteiro
+</option>
+
+<option>
+Casado
+</option>
+
+<option>
+Viúvo
+</option>
+
+</select>
+
+<select id="ensino">
+
+<option value="">
+Escolaridade
+</option>
+
+<option>
+Fundamental
+</option>
+
+<option>
+Médio
+</option>
+
+<option>
+Técnico
+</option>
+
+</select>
+
+<h2>Experiência 1</h2>
+
+<input
+type="text"
+id="cargo1"
+placeholder="Cargo">
+
+<input
+type="text"
+id="empresa1"
+placeholder="Empresa">
+
+<input
+type="text"
+id="tempo1"
+placeholder="Tempo de Serviço">
+
+<h2>Experiência 2</h2>
+
+<input
+type="text"
+id="cargo2"
+placeholder="Cargo">
+
+<input
+type="text"
+id="empresa2"
+placeholder="Empresa">
+
+<input
+type="text"
+id="tempo2"
+placeholder="Tempo de Serviço">
+
+<h2>Experiência 3</h2>
+
+<input
+type="text"
+id="cargo3"
+placeholder="Cargo">
+
+<input
+type="text"
+id="empresa3"
+placeholder="Empresa">
+
+<input
+type="text"
+id="tempo3"
+placeholder="Tempo de Serviço">
+
+<input
+type="tel"
+id="celular"
+placeholder="Celular">
+
+<input
+type="email"
+id="email"
+placeholder="E-mail">
+
+<h2>Foto do Currículo</h2>
+
+<div id="dropArea">
+
+Clique ou arraste sua foto aqui
+
+<input
+type="file"
+id="foto"
+accept="image/*"
+hidden>
+
+</div>
+
+<div id="previewFoto">
+
+<img
+id="fotoPreview"
+src="">
+
+</div>
+
+<button
+type="button"
+onclick="visualizarCurriculo()">
+
+VISUALIZAR CURRÍCULO
+
+</button>
+
+</form>
+
+</div>
+
+<script src="../js/curriculo.js"></script>
+
+</body>
+
+</html>

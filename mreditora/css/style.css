@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:url("../assets/images/fut.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+
+    min-height:100vh;
+
+    backdrop-filter:blur(4px);
+}
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px;
+}
+
+.classificacao{
+
+    background:#ff0000;
+
+    padding:10px 15px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+}
+
+.menu{
+
+    display:flex;
+    gap:10px;
+}
+
+.menu button,
+footer button{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:rgba(0,255,255,.15);
+
+    border:1px solid cyan;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.menu button:hover,
+footer .botao-link{
+
+    box-shadow:0 0 20px cyan;
+
+    transform:translateY(-3px);
+}
+
+.hero{
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.hot{
+
+    width:280px;
+    max-width:90%;
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:1.2rem;
+
+    max-width:700px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.acessados{
+
+    text-align:center;
+
+    padding:30px 20px;
+}
+
+.acessados h2{
+
+    color:cyan;
+
+    margin-bottom:25px;
+}
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.cards img{
+
+    width:220px;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.cards img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 25px cyan;
+}
+
+.noticias{
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+.noticias h2{
+
+    color:cyan;
+
+    margin-bottom:20px;
+}
+
+.noticias img{
+
+    width:520px;
+
+    max-width:90%;
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.noticias img:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 0 25px cyan;
+}
+
+.frase{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    padding:50px 20px;
+}
+
+.texto{
+
+    text-align:center;
+}
+
+.texto h3{
+
+    color:cyan;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+}
+
+.contatos p{
+
+    margin:6px 0;
+}
+
+.em{
+
+    width:130px;
+}
+
+footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    padding:20px;
+}
+
+.louvado{
+
+    text-align:center;
+
+    padding:15px;
+
+    color:gold;
+
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .cards img{
+        width:170px;
+    }
+
+    .em{
+        width:120px;
+    }
+
+    .texto h3{
+        font-size:1.5rem;
+    }
+
+    .classificacao{
+        font-size:12px;
+    
+
+}

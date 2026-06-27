@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualizar Currículo</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body class="fundo-interno">
+  <div id="curriculoPreview" style="background:url('../assets/imagens/fundo.png') no-repeat center; background-size:cover; padding:20px;">
+    <h2>Maria José</h2>
+    <p><strong>Endereço:</strong> Rua Exemplo, 123 - Manaus/AM</p>
+    <p><strong>Estado Civil:</strong> Solteira</p>
+    <p><strong>Escolaridade:</strong> Ensino Médio Completo</p>
+    <h3>Perfil Profissional</h3>
+    <p>Pontual, pró-ativa, dinâmica e organizada...</p>
+    <h3>Experiência</h3>
+    <p>Cargo: Auxiliar Administrativo - Empresa X (2 anos)</p>
+    <footer style="text-align:center; margin-top:30px;">
+      🇧🇷 Brasil - "Ordem e Progresso" <br>
+      <span style="opacity:0.3;">metar.ia.br</span>
+    </footer>
+  </div>
+
+  <div style="text-align:center; margin-top:20px;">
+    <button id="btnPDF">📄 GERAR PDF</button>
+    <button id="btnIMG">🖼️ GERAR IMAGEM (JPG)</button>
+  </div>
+
+  <script src="../assets/js/gerador.js"></script>
+</body>
+</html>

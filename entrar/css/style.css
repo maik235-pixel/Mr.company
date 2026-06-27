@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(0,255,255,0.12),
+    transparent 40%),
+    #888888;
+
+    color:2d2d2d;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+}
+
+.topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+.icone-topo{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+
+.logo-central{
+    width:90px;
+    object-fit:contain;
+}
+
+.login-card{
+
+    backdrop-filter:blur(15px);
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border:1px solid rgba(0,255,255,0.15);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,0.08);
+}
+
+.login-card h1{
+    font-size:1.8rem;
+    margin-bottom:10px;
+
+    color:#333333;
+}
+
+.subtitulo{
+    color:#bfc7d6;
+
+    line-height:1.5;
+
+    margin-bottom:25px;
+}
+
+.checkbox-area{
+    display:flex;
+    align-items:flex-start;
+
+    gap:10px;
+
+    text-align:left;
+
+    margin-bottom:25px;
+}
+
+.checkbox-area input{
+    margin-top:4px;
+}
+
+.checkbox-area a{
+    color:#00ffff;
+    text-decoration:none;
+}
+
+.checkbox-area a:hover{
+    text-decoration:underline;
+}
+
+.tecnologia{
+    width:100%;
+    max-width:600px;
+
+    margin:50px auto;
+
+    display:block;
+}
+
+.botoes{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn-google,
+.btn-criar{
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:15px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.btn-google{
+
+    background:#00e5ff;
+
+    color:#000;
+}
+
+.btn-google:hover{
+    transform:translateY(-2px);
+}
+
+.btn-criar{
+
+    background:transparent;
+
+    color:#00ffff;
+
+    border:1px solid #00ffff;
+}
+
+.btn-criar:hover{
+    background:rgba(0,255,255,0.1);
+}
+
+footer{
+    text-align:center;
+    margin-top:25px;
+}
+
+.seguranca{
+    color:#95a3bd;
+    margin-bottom:8px;
+}
+
+.copyright{
+    margin-bottom:5px;
+}
+
+.marca{
+    color:#00ffff;
+    font-weight:bold;
+}
+
+@media(max-width:600px){
+
+    .login-card{
+        padding:22px;
+    }
+
+    .login-card h1{
+        font-size:1.4rem;
+    }
+
+    .icone-topo{
+        width:40px;
+        height:40px;
+    }
+
+    .logo-central{
+        width:70px;
+    }
+}

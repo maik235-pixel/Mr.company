@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Preencher Dados - CADASTRADO/CURRÍCULO</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+</head>
+<body class="fundo-interno">
+  <h2>Preencha seus dados</h2>
+  <form id="formCurriculo">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <input type="text" placeholder="Nome Completo" required>
+      <input type="file" accept="image/*">
+      <input type="text" placeholder="Endereço Completo">
+      <select>
+        <option>Solteiro(a)</option>
+        <option>Casado(a)</option>
+        <option>Divorciado(a)</option>
+        <option>Viúvo(a)</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Perfil Profissional</legend>
+      <textarea>Pontual, pró-ativo(a), dinâmico(a)...</textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Experiência Profissional</legend>
+      <input type="text" placeholder="Função / Cargo">
+      <input type="text" placeholder="Empresa">
+      <input type="text" placeholder="Tempo de serviço">
+      <input type="text" placeholder="Cidade e Estado">
+      <button type="button">+ Adicionar mais uma experiência</button>
+    </fieldset>
+
+    <button type="submit">Pré-Visualizar</button>
+  </form>
+
+  <script src="../assets/js/formulario.js"></script>
+</body>
+</html>

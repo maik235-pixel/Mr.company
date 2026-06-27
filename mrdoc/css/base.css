@@ -1,0 +1,248 @@
+/* RESET GERAL */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+/* FUNDO DA TELA */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url("../imagens/galax.png") no-repeat center center fixed !important;
+    background-size: cover !important;
+    color: #fff;
+    min-height: 100vh;
+    padding: 0 20px 15px;
+    overflow-x: hidden;
+}
+
+/* ========== CABEÇALHO MENU - Quem somos / Oportunidade ========== */
+.cabecalho-menu {
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-botoes {
+    display: flex;
+    gap: 50px;
+}
+
+.botao-menu {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.botao-menu:hover {
+    background-color: rgba(0, 138, 0, 0.6);
+    border-color: #34c734;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .cabecalho-menu { justify-content: center; }
+    .botao-menu { font-size: 0.85rem; padding: 6px 12px; }
+}
+
+/* ========== LOGO PRINCIPAL ========== */
+.cabecalho-logo {
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+.logo {
+    height: 170px;
+    width: auto;
+}
+@media (max-width: 768px) { .logo { height: 73px; } }
+
+/* ========== TÍTULO E FRASE ========== */
+.titulo-principal {
+    font-size: 22pt !important;
+    font-weight: 900;
+    text-align: left;
+    color: #fff;
+    text-shadow: 2px 2px 0 #222, 3px 3px 0 #444, 4px 4px 8px #000;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+@media (max-width: 768px) { .titulo-principal { font-size: 15pt !important; } }
+
+.frase-boas-vindas {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #000;
+    max-width: 500px;
+    margin-left: 20px;
+}
+
+/* ========== CAIXA PRETA + EMI ========== */
+.container-caixa-emi {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: 300px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.caixa-texto-preto {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    width: 420px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .caixa-texto-preto { width: 90%; margin-left: auto; margin-right: auto; }
+}
+
+.imagem-emi {
+    width: auto;
+    text-align: center;
+}
+.emi {
+    height: 420px;
+    width: auto;
+}
+@media (max-width: 768px) {
+    .imagem-emi { width: 100%; margin-top: 20px; }
+    .emi { height: 260px; }
+}
+
+/* ========== EXEMPLO DOCUMENTO ========== */
+.secao-exemplo {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+.titulo-exemplo-3d {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 0 #111, 2px 2px 0 #333, 0 0 8px rgba(255,255,255,0.2);
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) { .titulo-exemplo-3d { font-size: 1.1rem; } }
+
+.imagem-documento {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.doc {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+@media (max-width: 768px) { .doc { width: 85%; } }
+
+/* ========== ⚡ RODAPÉ - BOTÕES SUPER DESTACADOS ⚡ ========== */
+.rodape-principal {
+    width: 100%;
+    text-align: center;
+    padding: 35px 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85), rgba(0, 40, 0, 0.95));
+    border-top: 3px solid #39ff14; /* Linha mais grossa e brilhante */
+    box-shadow: 0 -8px 30px rgba(57, 255, 20, 0.4), 0 0 40px rgba(0, 238, 255, 0.2);
+    margin-top: 20px;
+}
+
+/* CONTAINER DOS BOTÕES */
+.botoes-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px; /* Mais espaço entre eles */
+    flex-wrap: wrap;
+}
+
+/* ⚡ RAIO - MAIOR E BRILHANTE */
+.raio {
+    font-size: 3.2rem; /* Bem maior */
+    color: #39ff14;
+    text-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14,
+
+.classificacao-faixa{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:15px;
+
+    padding:8px 18px;
+
+    background:rgba(0,0,0,.45);
+
+    border:1px solid rgba(52,199,52,.5);
+
+    border-radius:30px;
+
+    color:#ffffff;
+
+    font-size:15px;
+    font-weight:600;
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:
+    0 0 10px rgba(52,199,52,.2);
+
+    transition:.3s;
+}
+
+.classificacao-faixa{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:15px;
+    padding:8px 18px;
+
+    background:rgba(0,0,0,.45);
+    border:1px solid rgba(52,199,52,.4);
+    border-radius:30px;
+
+    color:#ffffff;
+    font-size:15px;
+    font-weight:600;
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:
+    0 0 10px rgba(52,199,52,.2);
+
+    transition:.3s;
+}
+
+.classificacao-faixa:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 0 15px rgba(52,199,52,.4);
+}
+
+.status-livre{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+
+    background:#34c734;
+
+    box-shadow:
+    0 0 8px #34c734,
+    0 0 16px #34c734;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Prévia do Currículo</title>
+
+<link rel="stylesheet"
+href="../css/preview.css">
+
+</head>
+
+<body>
+
+<div class="acoes">
+
+<button onclick="gerarPDF()">
+📄 Exportar PDF
+</button>
+
+<button onclick="gerarJPG()">
+🖼️ Exportar JPG
+</button>
+
+<button onclick="history.back()">
+⬅ Voltar
+</button>
+
+</div>
+
+<div id="curriculoPreview">
+
+<div class="cabecalho">
+
+<div>
+
+<h1 id="nome"></h1>
+
+<p id="endereco"></p>
+
+<p id="estadoCivil"></p>
+
+<p id="ensino"></p>
+
+</div>
+
+<img
+id="fotoPerfil"
+src="">
+
+</div>
+
+<h2>PERFIL PROFISSIONAL</h2>
+
+<p>
+Pontual, pró-ativo e produtivo!
+</p>
+
+<h2>EXPERIÊNCIAS PROFISSIONAIS</h2>
+
+<div id="experiencias"></div>
+
+<h2>OBSERVAÇÃO</h2>
+
+<p>
+Eu me comprometo em servir para melhoria desta conceituada empresa!
+</p>
+
+<h2>CONTATOS</h2>
+
+<p id="celular"></p>
+
+<p id="email"></p>
+
+<div id="qrcode"></div>
+
+<footer>
+
+Brasil - Ordem e Progresso ⚡
+
+<br>
+
+Metar.ia.br
+
+</footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MR DOC</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- Logo -->
+    <img src="imagens/logo.png" class="logo">
+
+    <!-- Título -->
+    <h1>ESCOLHA O SERVIÇO</h1>
+
+    <!-- Área Principal -->
+    <div class="servicos">
+
+        <img src="imagens/emi.png" class="emi">
+
+        <div class="botoes">
+
+            <!-- Converter Imagem -->
+            <button class="neon-btn" onclick="selecionarImagem()">
+                CONVERTER IMAGEM
+            </button>
+
+            <!-- Input oculto -->
+            <input type="file"
+                   id="imagemInput"
+                   accept="image/*"
+                   hidden>
+
+            <!-- Gerar Currículo -->
+            <button class="neon-btn"
+                    onclick="window.location.href='paginas/curriculo.html'">
+                GERAR CURRÍCULO
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Outros Serviços -->
+    <div class="outros">
+
+        <h2>Outros serviços da plataforma ⬇️</h2>
+
+        <div class="apps">
+
+            <img src="imagens/mercado.png"
+                 class="app-icon"
+                 onclick="abrirMercado()">
+
+            <img src="imagens/livro.png"
+                 class="app-icon"
+                 onclick="abrirLivro()">
+
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+
+        <h3>Metar.IA</h3>
+
+        <button class="inicio-btn"
+                onclick="window.location.href='index.html'">
+            INÍCIO
+        </button>
+
+        <p>Copyright © 2026</p>
+
+    </footer>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
